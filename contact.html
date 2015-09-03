@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8">
+		<title>
+		Nav | Architect
+		</title>
+	<meta name = "author" content="mjbacagan">
+
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Font Awesome -->=
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Web Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<!-- Styles Nav CSS -->
+	 <link href="css/styles.css" rel="stylesheet">
+	 <!-- Customize Nav CSS -->
+	 <link href="css/custom.css" rel="stylesheet"> 
+     <link rel="stylesheet" type="text/css" href="css/jquery.math-captcha.css" /> 
+</head>
+
+<body>
+    
+<!-- NAVBAR HEADER -->
+	<nav class="navbar navbar-fixed-top navbar-custom">
+		<div class="container">
+			<div class="navbar-inner">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+						<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand"></a>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li>
+				<a href="index.html">HOME</a>
+				</li>
+				<li>
+				<a href="profile.html" >PROFILE</a>
+				</li>
+				<li>
+				<a href="work.html" >WORK</a>
+				</li>
+				<li>
+				<a href="contact.html" class="active">CONTACT</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div>
+	</nav>
+	
+<!--	CONTAINER-->
+    <div class="intro">
+        <div class="intro-body">
+                <div class="centercontact">
+                    <div class="contentcontact">
+                                <p></p>
+                        <b>Address</b>
+                                <p></p>
+                        <div id="map"> </div>
+                        <p id="whitecontact">Unit 7, 2nd Floor, JRS Building, Brgy. H. C. Conception Maharlika Highway 3100 CABANATUAN CITY PHILIPPINES</p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <b>T(L)</b> <h7>+63 905 336 1576(PHI)</h7>
+                            </li>
+                            <li>
+                                <b>T(I)</b> <h7>+65 8660 0443(SG)</h7>
+                            </li>
+                            <li>
+                                <b>E</b> <h7>info@nav-design.com</h7>
+                            </li>
+                              <li>
+                                <b>W</b>  <h7>www.nav-design.com</h7>
+                            </li>
+                        </ul>
+                        <div class="form-group required">
+                              
+                        <b>Enquiry</b>
+                            <p></p>
+                            <form class="form-horizontal">
+                              <div class="form-group">
+                                  Name:<label class="control-label"></label>
+                           
+                                    <input type="text"  placeholder="Name">
+                     
+                              </div>
+                              <div class="form-group">
+                                Company:<label class="control-label"></label>
+                      
+                                  <input type="text"  placeholder="Company">
+                         
+                              </div>
+                                   <div class="form-group">
+                                Email:<label class="control-label"></label>
+                      
+                                  <input type="text"  placeholder="E-mail">
+                         
+                              </div>
+                                   <div class="form-group">
+                                Phone:<label class="control-label"></label>
+                      
+                                  <input type="text"  placeholder="Phone">
+                         
+                              </div>
+                            </form>
+                        </div>
+                        
+                    <div id="demo">
+                        <form>
+                            <p id="math-captcha"></p>
+                        </form>
+                    </div>
+                            <div class="floatinleft">
+                                Message:
+                            <textarea rows="3" cols="40" name="comment" form="usrform">
+                            </textarea>
+                            <button type="submit" class="btn btn-default">SEND</button>
+                            </div>
+              
+                            
+                    </div>
+                </div>
+        </div>
+    </div>
+        
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>     
+<script src="js/jquery.math-captcha.js"></script>   
+    
+<script type="text/javascript">
+			$("#math-captcha").mathCaptcha({
+				imgPath: 'img/num/',
+				operation: "random",
+				introText: 'Please enter the result of equation:',
+				successFunction: function() {
+					form = $('form');
+					form.append('<p><input type="submit" value="Submit"></p>');
+					$('.math-captcha-error').remove();
+				},
+				failFunction: function() {
+					form = $('form');
+					form.find('input[type="submit"]').remove();
+					if ($('.math-captcha-error').length < 1) {
+						$('#math-captcha').append("<p class='math-captcha-error'>Wrong result!</p>");
+					}
+				}
+			});
+		</script>    
+    
+   
+<script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat:15.473775, lng:120.956801},
+            zoom: 17
+          });
+        }
+</script>
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+
+
+    
+       
+</body>
+
+</html>
