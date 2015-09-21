@@ -17,6 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
 <!--    <link href="css/screen.css" rel="stylesheet">-->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
@@ -70,21 +71,27 @@
     <!-- Page Content -->
     <div id="mainwrap" >
         <div class="rightwrapper">
-            <div id="innerright">
-                <p class="fonto">DESIGN PHILOSOPHY / PRINCIPAL'S BIOGRAPHY</p>
+            <div class="right-view-philosophy side-wrapper">
+                <p class="fonto">DESIGN PHILOSOPHY</p>
+            </div>
+            <div class="right-view-biography side-wrapper">
+                <p class="fonto">PRINCIPAL'S BIOGRAPHY</p>
             </div>
         </div>
             <div class="leftwrapper">
-               <div id="innerright">
-                   <p class="fonto">VISION and MISSION / PROFESSIONAL SERVICES</p>
-                </div>
+               <div class=" left-view-vision-mision side-wrapper">
+                   <p class="fonto">VISION and MISSION</p>
+              </div>
+              <div class=" left-view-services side-wrapper">
+                   <p class="fonto"> PROFESSIONAL SERVICES</p>
+              </div>
         </div>
         <div class="middlewrapper">
-            <div id="innermiddle">
-                <p class="fonto">DESIGN PHILOSOPHY</p>
-                 <p>VISION and MISSION</p>
-                 <p>PRINCIPAL'S BIOGRAPHY</p>
-                 <p>PROFESSIONAL SERVICES</p>
+            <div id="innermiddle" class="menu-profile">
+                 <p class="menu-clicker" data-bacagan="right-view-philosophy">DESIGN PHILOSOPHY</p>
+                 <p   class="menu-clicker" data-bacagan="left-view-vision-mision ">VISION and MISSION</p>
+                 <p  class="menu-clicker" data-bacagan="right-view-biography">PRINCIPAL'S BIOGRAPHY</p>
+                 <p class="menu-clicker" data-bacagan="left-view-services">PROFESSIONAL SERVICES</p>
             </div>
         </div>
  
@@ -97,9 +104,23 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
     var width = $('.justified').width();
-$('.justified').css('margin-left', '-' + (width / 2)+'px');
+    $('.justified').css('margin-left', '-' + (width / 2)+'px');
     </script>
 
+    <!--  @description "Script for tabs" -->
+    <!--  @author Pat Paran-->
+    
+    <script>
+            $('.menu-clicker').click(function(){
+                $('.menu-clicker').removeClass('fonto');
+                $('.side-wrapper').css('display','none');
+                $(this).addClass('fonto');
+                var getAttr = $(this).attr('data-bacagan');
+
+                $('.'+getAttr).css('display','block');
+                if(getAttr == )
+            });
+    </script>
 </body>
 
 </html>
