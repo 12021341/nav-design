@@ -28,10 +28,38 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <script type="text/javascript">
+             function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("logo").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("logo").src = images[x];
+          }
+        
+        function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "img/logo/logo1.jpg";
+          images[1] = "img/logo/logo2.jpg";
+          images[2] = "img/logo/logo3.jpg";
+          images[3] = "img/logo/logo4.jpg";
+          images[4] = "img/logo/logo5.jpg";
+          images[5] = "img/logo/logo6.jpg";
+          images[6] = "img/logo/logo7.jpg";
+          images[7] = "img/logo/logo8.jpg";
+          images[8] = "img/logo/logo9.jpg";
+        
+    </script>
 
 </head>
 
-<body>
+<body onload="startTimer()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom" role="navigation">
@@ -76,7 +104,7 @@
             <div class="exactwrapper">
                    <tr>
                       <td>
-                          <img src="img/logo.jpg" id="logo" alt="NavArchitect" title="NAV" /> 
+                          <img src="img/logo/logo.jpg" id="logo" alt="NavArchitect" title="NAV" /> 
                           <p class="belownav"><b>n</b>ew<b>a</b>rchitecture<b>v</b>ision</p>
                       </td>
                     </tr>
@@ -111,6 +139,7 @@
     </div>
 </div>
     <!-- /.container -->
+    
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
