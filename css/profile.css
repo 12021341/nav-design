@@ -17,6 +17,20 @@ font-weight: normal;
 }  
 .right-view-biography{
 }
+.right-view-partner-biography{
+}
 th{
 font-weight: normal;
+}
+.dropdown-menu{
+    background-color: #1c1c1c;
+    color: #FF6600;
+}
+.dropdown-menu>li>a{
+    color: #FFFFFF;
+    background-color: #1c1c1c;
+}
+.dropdown-menu>li>a:hover{
+    color: #FF6600;
+    background-color: #1c1c1c;
 }
