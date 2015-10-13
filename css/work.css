@@ -1,5 +1,14 @@
+.first-col{
+    width: 10%;
+    height: 100%;second
+    position: relative;
+    float: left;
+    overflow: hidden;
+    background-color: #1c1c1c;
+    margin-right: 4px;
+}
 .second-col{
-    width: 20%;
+    width: 10%;
     height: 100%;
     float: left;
     background-color: #1c1c1c;
@@ -8,27 +17,18 @@
     position: relative;
     overflow: hidden;
 }
-.first-col{
-    width: 20%;
-    height: 100%;second
-    position: relative;
-    float: left;
-    overflow: hidden;
-    background-color: #1c1c1c;
-    margin-right: 4px;
-
-}
 .third-col{
     float: left;
     width: 18%;
     background-color: #1c1c1c;
     height: 100%;
-    margin-right: 4px;
+/*    margin-right: 4px;*/
+    margin: 0 auto;
     overflow: hidden;
 }
 .fourth-col{
     height: 100%;
-    width: 20%;
+    width: 10%;
     float: left;
     background-color: #1c1c1c;
     overflow: hidden;
@@ -37,12 +37,21 @@
 }
 .fifth-col{
     float: left;
-    width: 20.5%;
+    width: 10%;
     background-color: #1c1c1c;
     position: relative;
     height: 100%;
-    margin-right:0;
+    margin-right:4px;
     overflow: hidden;
+}
+.sixth_col{
+    width: 10%;
+    height: 100%;second
+    position: relative;
+    float: left;
+    overflow: hidden;
+    background-color: #1c1c1c;
+    margin-right: 4px;
 }
 #innermiddle{
     padding-top: 10%;
@@ -106,18 +115,7 @@
     padding: right: 0;
     position: relative;
 }
-#firstPic{
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    postition: relative;
-/*    background-image:url('../img/Commercial/01/01.jpg');*/
-    background-image:url('../img/Thumbnails/01.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 
-}
 .first_box .text{
     position:absolute;
     text-align: center; 
@@ -133,107 +131,70 @@
     padding-top: 20%;
     opacity: 1;
 }
-#firstPic:hover {
-    zoom: 1;
-    opacity: 0.5;
-    
-      -webkit-transition: opacity 0.1s ease-in-out;
-       -moz-transition: opacity 0.1s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in-out;
-         -o-transition: opacity 0.1s ease-in-out;
-            transition: opacity 0.1s ease-in-out;
+
+#firstPic{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    postition: relative;
+    background-image:url('../img/Thumbnails/01_commercial.jpg');
+    background-repeat: repeat;
+    background-size: cover;
 
 }
-
 #secondPic{
     width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 100%;
     postition: relative;
-/*    margin-right: 20%;*/
-    background-image:url('../img/Thumbnails/02.jpg');
-    background-repeat: no-repeat;
+    background-image:url('../img/Thumbnails/02_mixeduse.jpg');
+    background-repeat: repeat;
     background-size: cover;
 }
-#secondPic:hover {
-    zoom: 1;
-    opacity: 0.5;
-    
-      -webkit-transition: opacity 0.1s ease-in-out;
-       -moz-transition: opacity 0.1s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in-out;
-         -o-transition: opacity 0.1s ease-in-out;
-            transition: opacity 0.1s ease-in-out;
 
-}
 #thirdPic{
     width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 100%;
     postition: relative;
-    background-image:url('../img/Thumbnails/03.jpg');
-    background-repeat: no-repeat;
+    background-image:url('../img/Thumbnails/03_lowmidrise.jpg');
+    background-repeat: repeat;
     background-size: cover;
 }
-#thirdPic:hover {
-    zoom: 1;
-    opacity: 0.5;
-    
-      -webkit-transition: opacity 0.1s ease-in-out;
-       -moz-transition: opacity 0.1s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in-out;
-         -o-transition: opacity 0.1s ease-in-out;
-            transition: opacity 0.1s ease-in-out;
-}
+
 #fourthPic{
     width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 100%;
     postition: absolute;
-    background-image:url('../img/Thumbnails/04.jpg');
-    background-repeat: no-repeat;
+    background-image:url('../img/Thumbnails/04_high.jpg');
+    background-repeat: repeat;
     background-size: cover;
-}
-#fourthPic:hover {
-    zoom: 1;
-    opacity: 0.5;
-
-      -webkit-transition: opacity 0.1s ease-in-out;
-       -moz-transition: opacity 0.1s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in-out;
-         -o-transition: opacity 0.1s ease-in-out;
-            transition: opacity 0.1s ease-in-out;
 }
 #fifthPic{
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
     postition: relative;
-    background-image:url('../img/Thumbnails/05.jpg');
-    background-repeat: no-repeat;
+    background-image:url('../img/Thumbnails/01_commercial.jpg');
+    background-repeat: repeat;
     background-size: cover;
 }
-#fifthPic:hover {
-    zoom: 1;
-    opacity: 0.5;
 
-      -webkit-transition: opacity 0.1s ease-in-out;
-       -moz-transition: opacity 0.1s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in-out;
-         -o-transition: opacity 0.1s ease-in-out;
-            transition: opacity 0.1s ease-in-out;
-}
+
+
 #firstPicture{
     float:left;
-    width: 1000px;
+    width: 495px;
     height: 100%;
     postition: relative;
     background-image:url('../img/Institutional_and_leisure/Korea/02.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 1000px;
     background-height: 100%;
     background-width: 1000px;
@@ -254,18 +215,19 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 #secondPicture{
     float:left;
     width: 100%;
     height: 120%;
-    background-image:url('../img/Residential/High/02-India/06.jpg');
+    background-image:url('../img/Thumbnails/02_mixeduse.jpg');
     postition: absolute;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     top: 0;
     left: 0;
     background-size: 1000px;
     background-height: 100%;
-    background-width: 1000px;
+    background-width: 50%;
 	position: relative;
 	padding-right: -50%;
     padding-left: -50%;
@@ -287,9 +249,9 @@
     float:left;
     width: 100%;
     height: 133%;
-    background-image:url('../img/Residential/High/03-India_with_resort/02.jpg');
+    background-image:url('../img/Thumbnails/03_lowmidrise.jpg');
     postition: absolute;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: left bottom;
     top: 0px;
     margin-bottom: 20%;
@@ -318,8 +280,8 @@
     width: 1000px;
     height: 100%;
     postition: absolute;
-    background-image:url('../img/Industrial_and_others/Singapore-Warehouse/01.jpg');
-    background-repeat: no-repeat;
+    background-image:url('../img/Thumbnails/04_high.jpg');
+    background-repeat: repeat;
     background-size: 1000px;
     background-height: 100%;
     background-width: 100%;
@@ -334,6 +296,114 @@
     -webkit-animation-direction: alternate;
     /* Standard syntax */
     animation-name: industrialPicture;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#fifthPicture{
+    float:right;
+    width: 1000px;
+    height: 100%;
+    postition: absolute;
+    background-image:url('../img/Thumbnails/05_industrial.jpg');
+    background-repeat: repeat-y;
+    background-size: 1000px;
+    background-height: 100%;
+    background-width: 100%;
+	position: relative;
+	padding-right: -50%;
+    padding-left: -50%;
+    -webkit-animation-name: masterplan;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: masterplan;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#sixthPicture{
+    float:right;
+    width: 1000px;
+    height: 100%;
+    postition: absolute;
+    background-image:url('../img/Thumbnails/06_masterplan.jpg');
+    background-repeat: repeat;
+    background-size: 1000px;
+    background-height: 100%;
+    background-width: 100%;
+	position: relative;
+	padding-right: -50%;
+    padding-left: -50%;
+    -webkit-animation-name: industrialPicture;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: industrialPicture;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#seventhPicture{
+    float:right;
+    width: 1000px;
+    height: 100%;
+    postition: absolute;
+    background-image:url('../img/Thumbnails/07_interiordesign.jpg');
+    background-repeat: repeat-y;
+    background-size: 1000px;
+    background-height: 100%;
+    background-width: 100%;
+	position: relative;
+/*	padding-right: 50%;*/
+/*    padding-left: 50%;*/
+    -webkit-animation-name: interior;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: interior;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#eighthPicture{
+    float:right;
+    width: 1000px;
+    height: 100%;
+    postition: absolute;
+    background-image:url('../img/Thumbnails/08_others.jpg');
+    background-repeat: repeat;
+    background-size: 1000px;
+    background-height: 100%;
+    background-width: 100%;
+	position: relative;
+	padding-right: -50%;
+    padding-left: -50%; 
+    -webkit-animation-name: other;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: other;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-delay: 2s;
@@ -385,6 +455,41 @@
     to {top:  10px;}
 }
 
+@-webkit-keyframes masterplan {
+    from {top: 0px;}
+    to {top: -130px;}
+}
+
+/* Standard syntax */
+@keyframes masterplan {
+    from {top: 0px;}
+    to {top: -130px;}
+}
+
+@-webkit-keyframes interior {
+ from {right: -200px;}
+    to {right: 90px;}
+}
+
+/* Standard syntax */
+@keyframes interior {
+ from {right: -200px;}
+    to {right: 90px;}
+}
+
+@-webkit-keyframes other {
+    from {top: 0px;}
+    to {top: 130px;}
+}
+
+/* Standard syntax */
+@keyframes other {
+    from {top: 0px;}
+    to {top: 130px;}
+}
+
+
+
 #imagelightbox
 {
     position: fixed;
@@ -393,5 +498,55 @@
     -ms-touch-action: none;
     touch-action: none;
 }
+
+/*<!-- Hover grayscale -->*/
+.grayscale{
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+    filter: gray; 
+    -webkit-filter: grayscale(100%); 
+    -webkit-transition: all .6s ease;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+
+}
+
+.grayscale:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+
+}
+.grayscale:before {
+		z-index: -1;
+		content: '';
+		position: absolute;
+
+}
+
+svg {
+    background:url('../img/Thumbnails/02_mixeduse.jpg');
+
+}
+
+svg image {
+    transition: all .6s ease;
+}
+
+svg image:hover {
+    opacity: 0;
+}
+
+.centerit{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 14px;
+    position: relative;
+    z-index: -1;
+    content: '';
+}
+
 
 
