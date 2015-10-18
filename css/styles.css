@@ -13,6 +13,34 @@
      color: #ffffff;
      letter-spacing: 1px; 
 }
+#icons {
+    padding:0 0 0 .3em;
+    list-style: none; 
+    width: 100%; 
+    margin:0 auto;
+}
+#icons li {
+    display:inline-block;
+    width:20%;
+    text-align:center;
+}
+#icons li img {
+    width: 80%;
+    height:80%; 
+    display:block;
+    margin:0 auto;
+}
+#icons li:hover img{
+    -webkit-filter: brightness(120%);
+}
+#facebook{
+float: left;
+}
+#mail{
+float: right;
+}
+
+
 #contactForm {
     width: 100%;
     padding-top: 20px;
@@ -407,15 +435,6 @@ margin:0 auto;
     color: #7A7A7A;
 }
 
-/*
-.middlewrapper{
-    margin: 0 auto;
-    background-color: #1c1c1c;
-    color: white;
-    width: 18%;
-    height: 100%;
-}
-*/
 .middlewrapper{
 	display: inline-block;
     background-color: #1c1c1c;
@@ -434,13 +453,14 @@ margin:0 auto;
     background-color: #1c1c1c;
     width: 42.2%;
     height: 100%;
-
+    display: none;
 }
 .rightwrapper{
     float: right;
     width: 42.8%;
     background-color: #1c1c1c;
     height: 100%;
+    display: none;
 }
 #innermiddle{
     padding-top: 10%;
@@ -479,10 +499,17 @@ margin:0 auto;
 	left:0;
 
 }
+/*
 #paa a{
   color: #7A7A7A;
   padding-right: 27px; 
+<<<<<<< HEAD
     padding-left: 0px;
     float: left;
 /*  letter-spacing: 20px;*/
 }
+=======
+  padding-left: 0px;
+  float: left;
+}*/
+>>>>>>> effc6e3574c09c66978ac2c76d34f411dddc81ed
