@@ -214,20 +214,20 @@ NAV is dedicated to employing the tools, methods, and visionary capability of de
         </div>
         <div class="middlewrapper">
             <div id="innermiddle" class="menu-profile">
-                 <p class="menu-clicker" data-bacagan="right-view-philosophy">DESIGN PHILOSOPHY</p>
-                 <p class="menu-clicker" data-bacagan="left-view-vision-mision ">VISION and MISSION</p>
+                 <p class="menu-clicker" data-bacagan="right-view-philosophy" onclick="display()">DESIGN PHILOSOPHY</p>
+                 <p class="menu-clicker" data-bacagan="left-view-vision-mision" onclick="display1()">VISION and MISSION</p>
                  <div class="dropdown">
-                     <p class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" id="menu1">KEY PERSONNEL<span class="caret"></span></p>
+                     <p class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" id="menu1" >KEY PERSONNEL<span class="caret"></span></p>
                      <ul class="dropdown-menu" aria-labelledby="menu1">
                         <li class="fonto">
-                            <a role="menuitem" tabindex="-1" > <p class="menu-clicker"data-bacagan="right-view-biography">Nonito A. Villarosa</p></a>
+                            <a role="menuitem" tabindex="-1" > <p class="menu-clicker" data-bacagan="right-view-biography" onclick="display()">Nonito A. Villarosa</p></a>
                         </li>
                         <li class="fonto">
-                            <a role="menuitem" tabindex="-1" > <p class="menu-clicker"data-bacagan="right-view-partner-biography">Norman A. Villarosa</p></a>
+                            <a role="menuitem" tabindex="-1" > <p class="menu-clicker"data-bacagan="right-view-partner-biography" onclick="display()">Norman A. Villarosa</p></a>
                         </li>
                     </ul>
                   </div>
-                <p  class="menu-clicker" data-bacagan="left-view-services">PROFESSIONAL SERVICES</p>
+                <p  class="menu-clicker" data-bacagan="left-view-services" onclick="display1()">PROFESSIONAL SERVICES</p>
                     
               
             </div>
@@ -254,12 +254,24 @@ NAV is dedicated to employing the tools, methods, and visionary capability of de
                 $('.side-wrapper').css('display','none');
                 $(this).addClass('fonto');
                 var getAttr = $(this).attr('data-bacagan');
-                $('.leftwrapper').css('display','block');
-                $('.rightwrapper').css('display','block');
+//                $('.leftwrapper').css('display','block');
+//                $('.rightwrapper').css('display','block');
 
                 $('.'+getAttr).css('display','block');
                 
             });
+    </script>
+
+    <script>
+     function display() {
+        $('.rightwrapper').css('visibility','visible');
+        $('.leftwrapper').css('visibility','hidden');
+    }
+    function display1() {
+        $('.rightwrapper').css('visibility','hidden');
+        $('.leftwrapper').css('visibility','visible');
+    }
+
     </script>
 </body>
 
