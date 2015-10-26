@@ -434,7 +434,6 @@ margin:0 auto;
     margin-left: 4%;
     color: #7A7A7A;
 }
-
 .middlewrapper{
 	display: inline-block;
     background-color: #1c1c1c;
@@ -444,8 +443,8 @@ margin:0 auto;
 	height: 580px;
 	min-height: 100%;
 	height: auto !important;
+    margin: 0 auto;
 	overflow: visible;
-	height: auto !important;
     margin-right: 1px;
 }
 .leftwrapper{
@@ -453,14 +452,16 @@ margin:0 auto;
     background-color: #1c1c1c;
     width: 41%;
     height: 100%;
-    display: none;
+/*    display: none;*/
+    visibility: hidden;
 }
 .rightwrapper{
     float: right;
     width: 41%;
     background-color: #1c1c1c;
     height: 100%;
-    display: none;
+   visibility: hidden;
+    
 }
 #innermiddle{
     padding-top: 10%;
