@@ -504,6 +504,13 @@ margin:0 auto;
 #paa a{
   color: #7A7A7A;
   padding-right: 27px; 
+<<<<<<< HEAD
+    padding-left: 0px;
+    float: left;
+/*  letter-spacing: 20px;*/
+}
+=======
   padding-left: 0px;
   float: left;
 }*/
+>>>>>>> effc6e3574c09c66978ac2c76d34f411dddc81ed
