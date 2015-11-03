@@ -1,6 +1,6 @@
 .first-col{
     width: 10%;
-    height: 100%;second
+    height: 100%;
     position: relative;
     float: left;
     overflow: hidden;
@@ -32,7 +32,7 @@
     background-color: #1c1c1c;
     overflow: hidden;
     position: relative;
-    margin-right: 4px;
+/*    margin-right: 4px;*/
     margin-left: 4px;
 }
 .fifth-col{
@@ -41,18 +41,26 @@
     background-color: #1c1c1c;
     position: relative;
     height: 100%;
-    margin-right:4px;
+    margin-left:4px;
     overflow: hidden;
 }
 .sixth-col{
-    float: left;
+/*
+    float: right;
     width: 9.7%;
     height: 100%;
     background-color: #1c1c1c;
     position: relative;
     overflow: visible;
-/*    margin-right: 3.5px;*/
-/*    margin-left: 3.5px;*/
+    margin-left: 0.5px;
+*/
+    float: left;
+    position: relative;
+    width: 10%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #1c1c1c;
+    margin-left: 4px;
 }
 #innermiddle{
     padding-top: 10%;
@@ -182,7 +190,7 @@
     max-width: 100vw;
     max-height: 100vh;
     postition: relative;
-    background-image:url('../img/Thumbnails/01_commercial.jpg');
+    background-image:url('../img/Thumbnails/06_masterplan.jpg');
     background-repeat: repeat;
     background-size: cover;
 }
@@ -307,7 +315,7 @@
     width: 495px;
     height: 100%;
     postition: relative;
-    background-image:url('../img/Thumbnails/cols/05_INDUSTRIAL.jpg');
+    background-image:url('../img/Thumbnails/cols/06_MASTERPLAN.jpg');
     background-repeat: repeat;
     background-size: 1000px;
     background-height: 100%;
@@ -333,7 +341,7 @@
     float:left;
     width: 100%;
     height: 130%;
-    background-image:url('../img/Thumbnails/cols/06_MASTERPLAN.jpg');
+    background-image:url('../img/Thumbnails/cols/05_INDUSTRIAL.jpg');
     postition: absolute;
     background-repeat: repeat;
     top: 0;
@@ -389,26 +397,25 @@
 #eighthPicture{
     float:left;
     width: 100%;
-    height: 200%;
+    height: 100%;
+    position: relative;
     background-image:url('../img/Thumbnails/cols/08_OTHERS.jpg');
-    postition: absolute;
     background-repeat: repeat;
-    top: 0;
-    left: 50;
+/*    left: 50;*/
     background-size: 500px;
     background-height: 200%;
     background-width: 100%;
 	position: relative;
 	padding-right: -50%;
     padding-left: -50%;
-    -webkit-animation-name: towerPicture;
-    -webkit-animation-duration: 9s;
+    -webkit-animation-name: Other;
+    -webkit-animation-duration: 5s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
 
-    animation-name: towerPicture;
+    animation-name: Other;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-delay: 2s;
@@ -461,6 +468,17 @@
     from {top: 0px;}
     to {top: -130px;}
 }
+
+/* Standard syntax */
+@keyframes Other {
+    from {top: 0px;}
+    to {top: -130px;}
+}
+@-webkit-keyframes Other {
+    from {top: 0px;}
+    to {top: -130px;}
+}
+
 /* Standard syntax */
 */
 @-webkit-keyframes masterplan {
