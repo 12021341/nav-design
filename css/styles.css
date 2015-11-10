@@ -25,8 +25,8 @@
     text-align:center;
 }
 #icons li img {
-    width: 70%;
-    height:65%; 
+    width: 58%;
+    height:60%; 
     display:block;
     margin:0 auto;
 }
@@ -249,7 +249,29 @@ height: 100%;
     text-align: center;
 }
 .btn{
-padding: 3.5px 9px;
+    padding: 1px 9px;
+    border-radius: 5px;
+    border: 0;
+    width: 55px;
+    height:23px;
+    font-family: Tahoma;
+    font-size: 0.8em;
+    background: #f4f4f4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f4f4f4), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f4f4f4 1%, #ededed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
 }
 .topnav{
 	padding-top:40%;
