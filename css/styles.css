@@ -526,17 +526,17 @@ margin:0 auto;
 	left:0;
 
 }
-/*
-#paa a{
-  color: #7A7A7A;
-  padding-right: 27px; 
-<<<<<<< HEAD
-    padding-left: 0px;
-    float: left;
-/*  letter-spacing: 20px;*/
-}
+
 =======
   padding-left: 0px;
   float: left;
 }*/
->>>>>>> effc6e3574c09c66978ac2c76d34f411dddc81ed
+
+.g-recaptcha>{
+width: 90% !important;
+height: 78px;
+transform:scale(0.77); //the code to rescale the captcha obtained in this page
+webkit-transform:scale(0.77);
+text-align: center;
+position: relative;
+}

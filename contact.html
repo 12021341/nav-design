@@ -21,6 +21,8 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -100,40 +102,51 @@
             <p></p>  
             <b class="heading">Enquiry</b>
             <p></p>
-            <table id="contactForm">
-                  <tr>
-                    <td><label class="labelContact">Name:<label class="control-label"></label></label></td>
-                    <td><input type="text" name="FirstName" placeholder="Name"></td>
-                  </tr>
-                  <tr>
-                    <td><label class="labelContact">Company:</label></td>
-                    <td><input type="text" name="FirstName" placeholder="Company"></td>
-                  </tr>
-                  <tr>
-                    <td><label class="labelContact">E-mail:<label class="control-label"></label></label></td>
-                    <td><input type="text" name="FirstName" placeholder="E-mail"></td>
-                  </tr>
-                <tr>
-                    <td><label class="labelContact">Phone:<label class="control-label"></label></label></td>
-                    <td><input type="text" name="FirstName" placeholder="Phone"></td>
-                  </tr>
-            </table>            
-                
-            <div class="message">
-                        <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
-                            <textarea rows="6" cols="32" name="comment"  form="usrform">
-                            </textarea>
-                            <button type="submit" class="btn">SEND</button>
-                    </div>
+            <form>
+                <table id="contactForm">
+
+                      <tr>
+                        <td><label class="labelContact">Name:<label class="control-label"></label></label></td>
+                        <td><input type="text" name="FirstName" placeholder="Name"></td>
+                      </tr>
+                      <tr>
+                        <td><label class="labelContact">Company:</label></td>
+                        <td><input type="text" name="FirstName" placeholder="Company"></td>
+                      </tr>
+                      <tr>
+                        <td><label class="labelContact">E-mail:<label class="control-label"></label></label></td>
+                        <td><input type="text" name="FirstName" placeholder="E-mail"></td>
+                      </tr>
+                    <tr>
+                        <td><label class="labelContact">Phone:<label class="control-label"></label></label></td>
+                        <td><input type="text" name="FirstName" placeholder="Phone"></td>
+                      </tr>
+                </table>      
                     
+            <div class="g-recaptcha" data-theme="light" data-sitekey="6LfHwBATAAAAAPEaJJZhj8krnTBhCiXf5LrxNbd4" 
+                 style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;">
+            </div>
+                <style>
+                    @media screen and (max-height: 575px){
+                    #rc-imageselect, .g-recaptcha {transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;}
+                </style>
+                    
+                <div class="message">
+                            <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
+                                <textarea rows="6" cols="32" name="comment"  form="usrform">
+                                </textarea>
+                                <button type="submit" class="btn">SEND</button>
                 </div>
-                    
-        </div>
-
-        </div>    <!-- /.container -->
-    </div>
-    </div>
-
+                
+            </form>
+        </div>             
+                </div>
+  </div>    <!-- /.container -->
+ </div>
+</div>
+    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
