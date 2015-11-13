@@ -526,17 +526,33 @@ margin:0 auto;
 	left:0;
 
 }
-
-=======
   padding-left: 0px;
   float: left;
 }*/
 
+/*
 .g-recaptcha>{
-width: 90% !important;
+width: 50% !important;
 height: 78px;
 transform:scale(0.77); //the code to rescale the captcha obtained in this page
 webkit-transform:scale(0.77);
 text-align: center;
 position: relative;
 }
+*/
+
+/*
+.recaptcha-wrap {
+    position: relative;
+    height: 76px;
+    padding:1px 0 0 1px;
+    background:#222;
+    > div {
+        position: absolute;
+        bottom: 2px;
+        right:2px;
+        font-size:10px;
+        color:#ccc;
+    }
+}
+*/
