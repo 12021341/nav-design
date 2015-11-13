@@ -102,28 +102,27 @@
             <p></p>  
             <b class="heading">Enquiry</b>
             <p></p>
-            <form>
+            <form id="contact_form" action="form.php" method="post">
                 <table id="contactForm">
 
                       <tr>
                         <td><label class="labelContact">Name:<label class="control-label"></label></label></td>
-                        <td><input type="text" name="FirstName" placeholder="Name"></td>
+                        <td><input type="text" name="name" placeholder="Name"></td>
                       </tr>
                       <tr>
                         <td><label class="labelContact">Company:</label></td>
-                        <td><input type="text" name="FirstName" placeholder="Company"></td>
+                        <td><input type="text" name="company" placeholder="Company"></td>
                       </tr>
                       <tr>
                         <td><label class="labelContact">E-mail:<label class="control-label"></label></label></td>
-                        <td><input type="text" name="FirstName" placeholder="E-mail"></td>
+                        <td><input type="text" name="email" placeholder="E-mail"></td>
                       </tr>
-                    <tr>
+                      <tr>
                         <td><label class="labelContact">Phone:<label class="control-label"></label></label></td>
-                        <td><input type="text" name="FirstName" placeholder="Phone"></td>
+                        <td><input type="text" name="phone" placeholder="Phone"></td>
                       </tr>
-                </table>      
-                    
-            <div class="g-recaptcha" data-theme="light" data-sitekey="6LfHwBATAAAAAPEaJJZhj8krnTBhCiXf5LrxNbd4" 
+              </table> 
+            <div class="g-recaptcha" data-theme="light" data-sitekey="6LctRQwTAAAAAMjD2zgIkV24zHLKB9ULkeEsQ91c" 
                  style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;">
             </div>
                 <style>
@@ -135,12 +134,12 @@
                             <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
                                 <textarea rows="6" cols="32" name="comment"  form="usrform">
                                 </textarea>
-                                <button type="submit" class="btn">SEND</button>
+                                <input type="submit" name="submit" value="enquiry" class="btn">SEND</button>
                 </div>
-                
-            </form>
+               
+        </form>
         </div>             
-                </div>
+     </div>
   </div>    <!-- /.container -->
  </div>
 </div>
