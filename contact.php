@@ -60,7 +60,7 @@
                         <a href="work.html">WORK</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="active">CONTACT</a>
+                        <a href="contact.php" class="active">CONTACT</a>
                     </li>
                 </ul>
             </div>
