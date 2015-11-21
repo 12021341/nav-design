@@ -49,7 +49,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav justified">
                       <li>
-                        <a href="index.html">HOME</a>
+                        <a href="index.php">HOME</a>
                     </li>
                     <li>
                         <a href="profile.html">PROFILE</a>
@@ -100,31 +100,32 @@
             <p></p>  
             <b class="heading">Enquiry</b>
             <p></p>
-            <table id="contactForm">
-                  <tr>
-                    <td><label class="labelContact">Name:<label class="control-label"></label></label></td>
-                    <td><input type="text" name="FirstName" placeholder="Name"></td>
-                  </tr>
-                  <tr>
-                    <td><label class="labelContact">Company:</label></td>
-                    <td><input type="text" name="FirstName" placeholder="Company"></td>
-                  </tr>
-                  <tr>
-                    <td><label class="labelContact">E-mail:<label class="control-label"></label></label></td>
-                    <td><input type="text" name="FirstName" placeholder="E-mail"></td>
-                  </tr>
-                <tr>
-                    <td><label class="labelContact">Phone:<label class="control-label"></label></label></td>
-                    <td><input type="text" name="FirstName" placeholder="Phone"></td>
-                  </tr>
-            </table>            
-                
-            <div class="message">
-                        <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
-                            <textarea rows="4" cols="45" name="comment"  form="usrform">
-                            </textarea>
-                            <button type="submit" class="btn">SEND</button>
-                    </div>
+            <form action="mail.php" method="POST">>
+                <table id="contactForm">
+                      <tr>
+                        <td><label class="labelContact">Name:<label class="control-label"></label></label></td>
+                        <td><input type="text" name="first_name" placeholder="Name"></td>
+                      </tr>
+                      <tr>
+                        <td><label class="labelContact">Company:</label></td>
+                        <td><input type="text" name="company" placeholder="Company"></td>
+                      </tr>
+                      <tr>
+                        <td><label class="labelContact">E-mail:<label class="control-label"></label></label></td>
+                        <td><input type="email" name="email" placeholder="E-mail"></td>
+                      </tr>
+                    <tr>
+                        <td><label class="labelContact">Phone:<label class="control-label"></label></label></td>
+                        <td><input type="text" name="phone" placeholder="Phone"></td>
+                      </tr>
+                </table>            
+                    
+                <div class="message">
+                    <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
+                        <textarea rows="4" cols="45" name="comment" ></textarea>
+                        <button type="submit" class="btn">SEND</button>
+                </div>
+            </form>
                     
                 </div>
                     
@@ -142,7 +143,21 @@
     <script>
     var width = $('.justified').width();
 $('.justified').css('margin-left', '-' + (width / 2)+'px');
+
+<?php if(isset($_GET['failed'])){ ?>
+        <?php if($_GET['failed'] == 'true') { ?>
+        alert('Something Went Wrong. Please Complete Information');
+
+        <?php }else if($_GET['failed'] == 'false'){ ?>
+            alert('Thank You! Your Informations are Kept Safely. We Will notify you soon!');
+
+        <?php } ?>  
+
+    <?php } ?>  
+
+
     </script>
+
 
 </body>
 
