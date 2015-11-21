@@ -13,6 +13,7 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
  $company = $_POST['company'];
  $phone = $_POST['phone'];
  $message = $_POST['comment'];
+ $captcha;
  
  $err = 0;
   if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -46,8 +47,14 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
  else{
 	$err++;
  }
-
-
+ $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LfOdRETAAAAAIdX_JJuJg-r3M6p_4QYFCehGNKw&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
+	if($response.success==false) 
+	{
+	  $err++;
+	} else
+	{
+	  echo '<h2>Thanks for sending your enquiry.</h2>';
+	}
 
 if($err >1){
 	 header('Location: contact.php?failed=true');

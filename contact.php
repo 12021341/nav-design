@@ -5,9 +5,9 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="description" content="Unit 7, 2nd Floor, JRS Building, Brgy. H. C. Conception, Maharlika Highway, 3100 CABANATUAN CITY PHILIPPINES">
+    <meta name="author" content="Nonito Villarosa">
 
     <title>Nav | Design</title>
 
@@ -21,6 +21,8 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -100,11 +102,12 @@
             <p></p>  
             <b class="heading">Enquiry</b>
             <p></p>
-            <form action="mail.php" method="POST">>
+            <form action="mail.php" method="POST">
                 <table id="contactForm">
                       <tr>
                         <td><label class="labelContact">Name:<label class="control-label"></label></label></td>
                         <td><input type="text" name="first_name" placeholder="Name"></td>
+
                       </tr>
                       <tr>
                         <td><label class="labelContact">Company:</label></td>
@@ -112,6 +115,7 @@
                       </tr>
                       <tr>
                         <td><label class="labelContact">E-mail:<label class="control-label"></label></label></td>
+
                         <td><input type="email" name="email" placeholder="E-mail"></td>
                       </tr>
                     <tr>
@@ -123,18 +127,33 @@
                 <div class="message">
                     <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
                         <textarea rows="4" cols="45" name="comment" ></textarea>
-                        <button type="submit" class="btn">SEND</button>
+                        
                 </div>
-            </form>
-                    
-                </div>
-                    
-        </div>
+                <div class="recaptcha-wrap">   
+                   <div class="g-recaptcha" data-sitekey="6LfOdRETAAAAAOzyZPq1GnRy48ucNY4aqRvSsl-Q" style="transform:scale(0.7);transform-origin:0;-webkit-transform:scale(0.7);
+transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;"></div>
+                   </div>
 
-        </div>    <!-- /.container -->
-    </div>
-    </div>
-
+                <!-- Huwag ka mag inline ng mga ganto my friend lagay mo css files mo. -->
+                <!--  Iwasan mo gumamit ng table lagi . masama ang gumamit ng table promise pag sa mga data table lang tska mo gamitin-->
+                <style>
+                    @media screen and (max-height: 575px){
+                    #rc-imageselect, .g-recaptcha {transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;}
+                }
+                .recaptcha-wrap{
+                    float: left;
+                }
+                </style>
+                <button type="submit" class="btn">SEND</button>
+        </form>
+        </div>             
+     </div>
+  </div>    <!-- /.container -->
+ </div>
+</div>
+    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 

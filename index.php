@@ -6,9 +6,28 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+    
+    <meta name="google-site-verification" content="Ptr1MjtVaTFClj1wjdakNkVd16tqmC2wGowBLLdu90U" />
+    <meta name="Description" CONTENT="Author: Nonito Villarosa,Category:Architect">
+    <meta description ="Nav-Design is an Architectural Firm based on Cabanatuan City,Philippines and Singapore"> 
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://nav-design.com",
+      "@type": "WebSite",
+      "name" : "nav-design",
+     "alternateName" : "nav design",
+      "url": "https://www.nav-design.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://nav.co/search?q={nav_design}",
+        "query-input": "required name=nav-design"
+      }
+    }
+    </script>
 
     <title>Nav | Design</title>
 
@@ -28,10 +47,47 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <script type="text/javascript">
+             function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("logo").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("logo").src = images[x];
+          }
+        
+        function startTimer() {
+              setInterval(displayNextImage, 1000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "img/logo/logo1.jpg";
+          images[1] = "img/logo/logo2.jpg";
+          images[2] = "img/logo/logo3.jpg";
+          images[3] = "img/logo/logo4.jpg";
+          images[4] = "img/logo/logo5.jpg";
+          images[5] = "img/logo/logo6.jpg";
+          images[6] = "img/logo/logo7.jpg";
+          images[7] = "img/logo/logo8.jpg";
+          images[8] = "img/logo/logo9.jpg";
+          images[9] = "img/logo/logo10.jpg";
+          images[10] = "img/logo/logo11.jpg";
+          images[11] = "img/logo/logo12.jpg";
+          images[12] = "img/logo/logo13.jpg";
+          images[13] = "img/logo/logo14.jpg";
+          images[14] = "img/logo/logo15.jpg";
+          images[15] = "img/logo/logo16.jpg";
+          images[16] = "img/logo/logo17.jpg";
+        
+        
+    </script>
 
 </head>
 
-<body>
+<body onload="startTimer()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom" role="navigation">
@@ -67,6 +123,7 @@
         </div>
         <!-- /.container -->
     </nav>
+    
 
     <!-- Page Content -->
     <div id="mainwrap" >
@@ -76,25 +133,25 @@
             <div class="exactwrapper">
                    <tr>
                       <td>
-                          <img src="img/logo.jpg" id="logo" alt="NavArchitect" title="NAV" /> 
+                          <img src="img/logo/logo.jpg" id="logo" alt="NavArchitect" title="NAV" /> 
                           <p class="belownav"><b>n</b>ew<b>a</b>rchitecture<b>v</b>ision</p>
                       </td>
                     </tr>
                 <div id="paa"> 
                     
-                    <ul class="nav navbar-nav ">
+                    <ul id="icons">
                         
                     <li>
-                        <a class="btn btn-social-icon btn-square"><i class="fa fa-facebook-square fa-3x"></i></a>
+                        <a href="http://www.facebook.com" target="_blank"><img src="images/facebook-square.png" id="facebook" alt="Nav Design facebook"></a>
                     </li>
                     <li>
-                         <a class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                        <a href="http://www.linkedin.com" target="_blank"><img  src="images/linkedin.png" id="linkedin" alt="Nav Design linkedin"></a>
                     </li>
                     <li>
-                       <a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
+                        <a href="http://www.instagram.com" target="_blank"><img  src="images/instagram.png" id="instagram" alt="Nav Design Instagram"></a>
                     </li>
                     <li>
-                      <a class="btn btn-social-icon btn-envelop"><i class="fa fa-envelope-square fa-3x"></i></a>
+                        <a href="#"><img  src="images/mail.png" id="mail" id="mail" alt="Nav Design mail"></a>
                     </li>
                           <p class="txt-railway">Copyright  &copy; 2015 NAV Design</p>   
                     </ul>
@@ -111,6 +168,7 @@
     </div>
 </div>
     <!-- /.container -->
+    
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
