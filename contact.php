@@ -144,7 +144,7 @@ transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;"></div>
                     float: left;
                 }
                 </style>
-                <button type="submit" class="btn">SEND</button>
+                <button type="submit" class="btn btn-default btn-xs">SEND</button>
         </form>
         </div>             
      </div>
