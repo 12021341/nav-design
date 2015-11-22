@@ -106,7 +106,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav justified">
                     <li>
-                        <a href="index.html" class="active">HOME</a>
+                        <a href="index.php" class="active">HOME</a>
                     </li>
                     <li>
                         <a href="profile.html">PROFILE</a>
@@ -115,7 +115,7 @@
                         <a href="work.html">WORK</a>
                     </li>
                     <li>
-                        <a href="contact.html">CONTACT</a>
+                        <a href="contact.php">CONTACT</a>
                     </li>
                 </ul>
             </div>

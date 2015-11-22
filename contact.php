@@ -51,7 +51,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav justified">
                       <li>
-                        <a href="index.html">HOME</a>
+                        <a href="index.php">HOME</a>
                     </li>
                     <li>
                         <a href="profile.html">PROFILE</a>
@@ -60,7 +60,7 @@
                         <a href="work.html">WORK</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="active">CONTACT</a>
+                        <a href="contact.php" class="active">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -102,12 +102,12 @@
             <p></p>  
             <b class="heading">Enquiry</b>
             <p></p>
-            <form id="contact_form" action="form.php" method="post">
+            <form action="mail.php" method="POST">
                 <table id="contactForm">
-
                       <tr>
                         <td><label class="labelContact">Name:<label class="control-label"></label></label></td>
-                        <td><input type="text" name="name" placeholder="Name"></td>
+                        <td><input type="text" name="first_name" placeholder="Name"></td>
+
                       </tr>
                       <tr>
                         <td><label class="labelContact">Company:</label></td>
@@ -115,31 +115,36 @@
                       </tr>
                       <tr>
                         <td><label class="labelContact">E-mail:<label class="control-label"></label></label></td>
-                        <td><input type="text" name="email" placeholder="E-mail"></td>
+
+                        <td><input type="email" name="email" placeholder="E-mail"></td>
                       </tr>
-                      <tr>
+                    <tr>
                         <td><label class="labelContact">Phone:<label class="control-label"></label></label></td>
                         <td><input type="text" name="phone" placeholder="Phone"></td>
                       </tr>
-              </table> 
-                <div class="recaptcha-wrap">   
-                        <div class="g-recaptcha" data-theme="light" data-sitekey="6LctRQwTAAAAAMjD2zgIkV24zHLKB9ULkeEsQ91c" 
-                             style="transform:scale(0.7);transform-origin:0;-webkit-transform:scale(0.7);
-transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;">
-                        </div>
+                </table>            
+                    
+                <div class="message">
+                    <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
+                        <textarea rows="4" cols="45" name="comment" ></textarea>
+                        
                 </div>
+                <div class="recaptcha-wrap">   
+                   <div class="g-recaptcha" data-sitekey="6LfOdRETAAAAAOzyZPq1GnRy48ucNY4aqRvSsl-Q" style="transform:scale(0.7);transform-origin:0;-webkit-transform:scale(0.7);
+transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;"></div>
+                   </div>
+
+                <!-- Huwag ka mag inline ng mga ganto my friend lagay mo css files mo. -->
+                <!--  Iwasan mo gumamit ng table lagi . masama ang gumamit ng table promise pag sa mga data table lang tska mo gamitin-->
                 <style>
                     @media screen and (max-height: 575px){
                     #rc-imageselect, .g-recaptcha {transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;}
+                }
+                .recaptcha-wrap{
+                    float: left;
+                }
                 </style>
-                    
-                <div class="message">
-                            <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
-                                <textarea rows="6" cols="32" name="comment"  form="usrform">
-                                </textarea>
-                                <input type="SEND" name="SEND" value="SEND" class="btn"></button>
-                </div>
-               
+                <button type="submit" class="btn">SEND</button>
         </form>
         </div>             
      </div>
@@ -157,7 +162,21 @@ transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;">
     <script>
     var width = $('.justified').width();
 $('.justified').css('margin-left', '-' + (width / 2)+'px');
+
+<?php if(isset($_GET['failed'])){ ?>
+        <?php if($_GET['failed'] == 'true') { ?>
+        alert('Something Went Wrong. Please Complete Information');
+
+        <?php }else if($_GET['failed'] == 'false'){ ?>
+            alert('Thank You! Your Informations are Kept Safely. We Will notify you soon!');
+
+        <?php } ?>  
+
+    <?php } ?>  
+
+
     </script>
+
 
 </body>
 
