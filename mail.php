@@ -75,7 +75,7 @@ else{
 	                               // TCP port to connect to
 
 	$mail->setFrom('from@nav-design.com', 'New Message From Customer');
-	$mail->addAddress('mjbacagan@gmail.com', 'Nav Design');     // Add a recipient
+	$mail->addAddress('info@nav-design.com', 'Nav Design');     // Add a recipient
 	             // Name is optional
 	//$mail->addReplyTo('info@nav-design.com', 'Information');
 	$mail->isHTML(true);                                  // Set email format to HTML
