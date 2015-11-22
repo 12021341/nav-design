@@ -125,7 +125,7 @@
     height: 20%;
     padding-left: 0;
     padding: right: 0;
-    position: absolute;
+    position: relative;
 }
 .fourth_box{
     border: 1px solid none;
