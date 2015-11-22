@@ -173,11 +173,8 @@ $('.justified').css('margin-left', '-' + (width / 2)+'px');
         <?php } ?>  
 
     <?php } ?>  
-
-
     </script>
-
-
+    
 </body>
 
 </html>
