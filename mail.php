@@ -76,7 +76,7 @@ else{
 
 //    $mail->Port = 587;     //587 changed from 2525
 //    $mail->Port = 2525;  
-    $mail->Port = 25;   
+    $mail->Port = 2525;   
 //    aeacd802486461803b47bf2c0251ba88a799ddc7
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'paranpatrickjoseph@gmail.com';                 // SMTP username
