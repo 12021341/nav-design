@@ -73,7 +73,7 @@ else{
 
 	$mail->isSMTP();                                      // Set mailer to use SMTP
 	$mail->Host = 'smtp.mandrillapp.com';  // Specify main and backup SMTP servers
-    $mail->Port = 578;     
+    $mail->Port = 587;     
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'paranpatrickjoseph@gmail.com';                 // SMTP username
 	$mail->Password = '0oaX2_DR5IaYsRRhrSwU6Q';                           // SMTP password
