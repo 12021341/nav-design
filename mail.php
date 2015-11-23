@@ -16,6 +16,12 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
  $captcha;
  
  $err = 0;
+
+if($captcha.getResponse() == "")
+    alert("You can't proceed!");
+else{
+    alert("Thank you");
+}
   if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo 'validated';
  }
@@ -53,7 +59,7 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 	  $err++;
 	} else
 	{
-	  echo '<h2>Thanks for sending your enquiry.</h2>';
+	  echo '<h2>Thank you for sending your enquiry!</h2>';
 	}
 
 if($err >1){
@@ -67,7 +73,7 @@ else{
 
 	$mail->isSMTP();                                      // Set mailer to use SMTP
 	$mail->Host = 'smtp.mandrillapp.com';  // Specify main and backup SMTP servers
-    $mail->Port = 2525;     
+    $mail->Port = 578;     
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'paranpatrickjoseph@gmail.com';                 // SMTP username
 	$mail->Password = '0oaX2_DR5IaYsRRhrSwU6Q';                           // SMTP password
@@ -80,8 +86,8 @@ else{
 	//$mail->addReplyTo('info@nav-design.com', 'Information');
 	$mail->isHTML(true);                                  // Set email format to HTML
 
-	$mail->Subject = 'New User Has signed In';
-	$mail->Body    = 'Hi Nav-Deisgn,<br><br>'.$first_name.' have a message fro you.<br> Email: '.$email.'<br> Comapany:'.$company.'<br> Phone:'.$phone.'<br> Message:'.$message.'.'  ;
+	$mail->Subject = 'New user has signed-in';
+	$mail->Body    = 'Hi Nav-Design,<br><br>'.$first_name.' have a message for you.<br> Email: '.$email.'<br> Comapany:'.$company.'<br> Phone:'.$phone.'<br> Message:'.$message.'.'  ;
 	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 	if(!$mail->send()) {
