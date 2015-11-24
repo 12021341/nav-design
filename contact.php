@@ -168,7 +168,7 @@ $('.justified').css('margin-left', '-' + (width / 2)+'px');
         alert('Something Went Wrong. Please Complete Information');
 
         <?php }else if($_GET['failed'] == 'false'){ ?>
-            alert('Thank You! Your Informations are Kept Safely. We Will notify you soon!');
+            alert('Thank you for your enquiry! Your informations are kept safely. We will notify you soon!');
 
         <?php } ?>  
 
