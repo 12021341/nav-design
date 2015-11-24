@@ -102,7 +102,7 @@
             <p></p>  
             <b class="heading">Enquiry</b>
             <p></p>
-            <form action="mail.php" method="POST">
+            <form action="mailer.php" method="POST">
                 <table id="contactForm">
                       <tr>
                         <td><label class="labelContact">Name:<label class="control-label"></label></label></td>
