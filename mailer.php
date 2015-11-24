@@ -84,7 +84,7 @@ else{
 	$mail->SMTPSecure = 'tls';                               
 	                               // TCP port to connect to
 
-	$mail->setFrom('from@nav-design.com', 'New Message From Customer');
+	$mail->setFrom('info@nav-design.com', 'New message from customer');
 	$mail->addAddress('info@nav-design.com', 'Nav Design');     // Add a recipient
 //    $mail->addAddress('mjbacagan@gmail.com', 'Mark John'); 
 	             // Name is optional
