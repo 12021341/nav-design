@@ -47,7 +47,12 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 	$err++;
  }
 
-
+if  ($captcha.getResponse() != ""){
+     echo 'validated';
+} else{
+    alert("You can't proceed!");
+    $err++;
+}
 
 if($err >1){
 	 header('Location: contact.php?failed=true');
@@ -74,7 +79,7 @@ else{
 	$mail->isHTML(true);                                  // Set email format to HTML
 
 	$mail->Subject = 'New user has sign-in';
-	$mail->Body    = 'Hi Nav-Design,<br><br>'.$first_name.' have a message fro you.<br> Email: '.$email.'<br> Comapany:'.$company.'<br> Phone:'.$phone.'<br> Message:'.$message.'.'  ;
+	$mail->Body    = 'Hi Nav-Design,<br><br>'.$first_name.' have a message for you.<br> Email: '.$email.'<br> Comapany:'.$company.'<br> Phone:'.$phone.'<br> Message:'.$message.'.'  ;
 	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 	if(!$mail->send()) {
 	    echo 'Message could not be sent.';

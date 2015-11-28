@@ -25,7 +25,7 @@
     text-align:center;
 }
 #icons li img {
-    width: 58%;
+    width: 60%;
     height:60%; 
     display:block;
     margin:0 auto;
@@ -50,7 +50,7 @@ float: right;
     border: 1px solid;
     width: 85%;
     font-color: #000000 !important;
-    font-size: 0.9em;
+    font-size: 0.7em;
     float:right;
     color: #000000;
     text-align: center;
@@ -157,10 +157,6 @@ height: 100%;
     font-size: 0.8em;
     
 }
-/*.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}*/
 .justified {
     position:absolute;
     left:50.2%;
