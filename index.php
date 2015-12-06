@@ -140,22 +140,21 @@
                 <div id="paa"> 
                     
                     <ul id="icons">
-                        
-                    <li>
-                        <a href="http://www.facebook.com" target="_blank"><img src="images/facebook-square.png" id="facebook" alt="Nav Design facebook"></a>
-                    </li>
-                    <li>
-                        <a href="http://www.linkedin.com" target="_blank"><img  src="images/linkedin.png" id="linkedin" alt="Nav Design linkedin"></a>
-                    </li>
-                    <li>
-                        <a href="http://www.instagram.com" target="_blank"><img  src="images/instagram.png" id="instagram" alt="Nav Design Instagram"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img  src="images/mail.png" id="mail" id="mail" alt="Nav Design mail"></a>
-                    </li>
-                          <p class="txt-railway">Copyright  &copy; 2015 NAV Design</p>   
+
+                        <li>
+                            <a href="http://www.facebook.com" target="_blank"><img src="images/facebook-square.png" id="facebook" alt="Nav Design facebook"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com" target="_blank"><img  src="images/linkedin.png" id="linkedin" alt="Nav Design linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com" target="_blank"><img  src="images/instagram.png" id="instagram" alt="Nav Design Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.plus.google.com" target="_blank"><img  src="images/gplus.png" id="gplus" alt="Nav Design mail"></a>
+                        </li>
+                        <p class="txt-railway">Copyright  &copy; 2015 NAV Design</p>   
                     </ul>
-                        
                     
                 </div>
                 
