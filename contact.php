@@ -144,7 +144,7 @@ transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;"></div>
                     float: left;
                 }
                 </style>
-                <button type="submit" class="btn btn-default btn-xs">SEND</button>
+                <button type="submit" id="submit" class="btn btn-default btn-xs">SEND</button>
         </form>
         </div>             
      </div>
@@ -160,6 +160,18 @@ transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;"></div>
     <!-- Bootstrap Core JavaScript -->`
     <script src="js/bootstrap.min.js"></script>
     <script>
+        
+        if(g-recaptcha.getResponse() == ""){
+            alert("You can't proceed!");
+        }else{
+            alert("Thank you");
+        }
+         if(grecaptcha.getResponse() == ""){
+            alert("You can't proceed!");
+        }else{
+            alert("Thank you");
+        }
+        
     var width = $('.justified').width();
 $('.justified').css('margin-left', '-' + (width / 2)+'px');
 
@@ -172,8 +184,12 @@ $('.justified').css('margin-left', '-' + (width / 2)+'px');
 
         <?php } ?>  
 
-    <?php } ?>  
+    <?php } ?> 
+        
+
     </script>
+    
+
     
 </body>
 

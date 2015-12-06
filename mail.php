@@ -48,12 +48,12 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
  else{
 	$err++;
  }
-if($captcha.getResponse() != ""){
-     echo 'validated';
-} else{
-    alert("You can't proceed!");
-    $err++;
-}
+//if($captcha.getResponse() != ""){
+//     echo 'validated';
+//} else{
+//    alert("You can't proceed!");
+//    $err++;
+//}
  $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LfOdRETAAAAAIdX_JJuJg-r3M6p_4QYFCehGNKw&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
 	if($response.success==false) 
 	{
@@ -75,9 +75,8 @@ else{
 	$mail->isSMTP();                                      // Set mailer to use SMTP
 	$mail->Host = 'smtp.mandrillapp.com';  // Specify main and backup SMTP servers
 
-    $mail->Port = 587;     //587 changed from 2525
-//    $mail->Port = 2525;  
-//    $mail->Port = 2525;   
+/*    $mail->Port = 587; */    //587 changed from 2525
+    $mail->Port = 2525;  
 //    aeacd802486461803b47bf2c0251ba88a799ddc7
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'paranpatrickjoseph@gmail.com';                 // SMTP username
