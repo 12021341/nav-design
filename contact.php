@@ -49,7 +49,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav justified" style="margin-left:-8%;">
+                <ul class="nav navbar-nav justified" style="margin-left:-125px;">
                       <li>
                         <a href="index.php">HOME</a>
                     </li>
