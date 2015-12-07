@@ -50,13 +50,13 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
  }
 
 if(!$captcha){
-          echo '<h2>Please check the the captcha form.</h2>';
+          alert ("Please check the the captcha form");
           exit;
     }
-$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
-if($response['success'] == false)
-    { 
-          echo '<h2>You are spammer ! Get the @$%K out</h2>';
+$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdklhITAAAAAAKwyEoz5fdbXx1ndfrfcABwDh0c&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
+if($response['success'] == false){ 
+    echo '<h2>You are spammer ! Get the @$%K out</h2>';
+    alert("Sorry, please try again")
     }
 if  ($captcha.getResponse() != ""){
      echo 'validated';
