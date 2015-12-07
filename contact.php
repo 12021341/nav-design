@@ -161,16 +161,16 @@ transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;"></div>
     <script src="js/bootstrap.min.js"></script>
     <script>
         
-        if(g-recaptcha.getResponse() == ""){
-            alert("You can't proceed!");
-        }else{
-            alert("Thank you");
-        }
-         if(grecaptcha.getResponse() == ""){
-            alert("You can't proceed!");
-        }else{
-            alert("Thank you");
-        }
+//        if(g-recaptcha.getResponse() == ""){
+//            alert("You can't proceed!");
+//        }else{
+//            alert("Thank you");
+//        }
+//         if(grecaptcha.getResponse() == ""){
+//            alert("You can't proceed!");
+//        }else{
+//            alert("Thank you");
+//        }
         
     var width = $('.justified').width();
 $('.justified').css('margin-left', '-' + (width / 2)+'px');

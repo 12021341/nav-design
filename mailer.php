@@ -16,15 +16,15 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
  $captcha = $_POST['g-recaptcha-response'];
 //$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdklhITAAAAAAKwyEoz5fdbXx1ndfrfcABwDh0c&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
 
-$url = 'https://www.google.com/recaptcha/api/siteverify';
-$privatekey="6LdklhITAAAAAAKwyEoz5fdbXx1ndfrfcABwDh0c";
-$response =file_get_contents($url."?secret=".$privatekey."&response=".$_POST['g-recaptcha-response'].$data=json_decode($response);
-$data=json_decode($response);
-if (isset($data->success) AND $ $data->success==true){
-    header('Location: contact.php?CaptchaPass=True')
-}else{
-    header('Location: contact.php?CaptchaFail=True')
-}                                  
+//$url = 'https://www.google.com/recaptcha/api/siteverify';
+//$privatekey="6LdklhITAAAAAAKwyEoz5fdbXx1ndfrfcABwDh0c";
+//$response =file_get_contents($url."?secret=".$privatekey."&response=".$_POST['g-recaptcha-response'].$data=json_decode($response);
+//$data=json_decode($response);
+//if (isset($data->success) AND $ $data->success==true){
+//    header('Location: contact.php?CaptchaPass=True')
+//}else{
+//    header('Location: contact.php?CaptchaFail=True')
+//}                                  
                             
  
  $err = 0;
