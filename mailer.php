@@ -9,10 +9,12 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
 
  $first_name = $_POST['first_name'];
- $email = $_POST['email'];
+ $email   = $_POST['email'];
  $company = $_POST['company'];
- $phone = $_POST['phone'];
- $message = $_POST['comment'];
+ $phone   = $_POST['phone'];
+ $message = $_POST['comment']; 
+ $captcha = $_POST['g-recaptcha-response'];
+
  
  $err = 0;
   if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -47,6 +49,15 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 	$err++;
  }
 
+if(!$captcha){
+          echo '<h2>Please check the the captcha form.</h2>';
+          exit;
+    }
+$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
+if($response['success'] == false)
+    { 
+          echo '<h2>You are spammer ! Get the @$%K out</h2>';
+    }
 if  ($captcha.getResponse() != ""){
      echo 'validated';
 } else{
