@@ -14,56 +14,66 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
  $phone   = $_POST['phone'];
  $message = $_POST['comment']; 
  $captcha = $_POST['g-recaptcha-response'];
+//$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdklhITAAAAAAKwyEoz5fdbXx1ndfrfcABwDh0c&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
 
+$url = 'https://www.google.com/recaptcha/api/siteverify';
+$privatekey="6LdklhITAAAAAAKwyEoz5fdbXx1ndfrfcABwDh0c";
+$response =file_get_contents($url."?secret=".$privatekey."&response=".$_POST['g-recaptcha-response'].$data=json_decode($response);
+$data=json_decode($response);
+if (isset($data->success) AND $ $data->success==true){
+    header('Location: contact.php?CaptchaPass=True')
+}else{
+    header('Location: contact.php?CaptchaFail=True')
+}                                  
+                            
  
  $err = 0;
-  if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo 'validated';
  }
- else{
+else{
 	$err++;
  }
 
- if (strlen($email) > 1) {
+if (strlen($email) > 1) {
     echo 'validated';
  }
  else{
 	$err++;
  }
-  if (strlen($first_name) > 1) {
+if (strlen($first_name) > 1) {
     echo 'validated';
  }
  else{
 	$err++;
  }
-   if (strlen($phone) > 1) {
+if (strlen($phone) > 1) {
     echo 'validated';
  }
  else{
 	$err++;
  }
-   if (strlen($message) > 1) {
+if (strlen($message) > 1) {
     echo 'validated';
- }
- else{
-	$err++;
- }
-
-if(!$captcha){
-          alert ("Please check the the captcha form");
-          exit;
-    }
-$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdklhITAAAAAAKwyEoz5fdbXx1ndfrfcABwDh0c&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
-if($response['success'] == false){ 
-    echo '<h2>You are spammer ! Get the @$%K out</h2>';
-    alert("Sorry, please try again")
-    }
-if  ($captcha.getResponse() != ""){
-     echo 'validated';
-} else{
-    alert("You can't proceed!");
-    $err++;
 }
+ else{
+	$err++;
+ }
+
+//if(!$captcha){
+//          alert ("Please check the the captcha form");
+//    }
+//
+//if($response['success'] == false){ 
+//    echo '<h2>You are spammer ! Get the @$%K out</h2>';
+//    alert("Sorry, please try again")
+//    }
+//if  ($captcha.getResponse() != ""){
+//     echo 'validated';
+//} else{
+//    alert("You can't proceed!");
+//    $err++;
+//}
 
 if($err >1){
 	 header('Location: contact.php?failed=true');
