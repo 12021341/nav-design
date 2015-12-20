@@ -35,13 +35,13 @@
     float:left;
 }
 #icons li:hover img{
-    -webkit-filter: brightness(120%);
-    -ms-filter: brightness(120%);
-    filter: brightness(120%);
+    -webkit-filter: brightness(220%);
+    -ms-filter: brightness(220%);
+    filter: brightness(220%);
     
-     -webkit-transform: scale(1.4);
-     -ms-transform: scale(1.4);
-     transform: scale(1.4);
+     -webkit-transform: scale(1.2);
+     -ms-transform: scale(1.2);
+     transform: scale(1.2);
 }
 /*
 li .facebook{
