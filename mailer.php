@@ -60,20 +60,23 @@ if (strlen($message) > 1) {
 	$err++;
  }
 
-//if(!$captcha){
-//          alert ("Please check the the captcha form");
-//    }
-//
-//if($response['success'] == false){ 
-//    echo '<h2>You are spammer ! Get the @$%K out</h2>';
-//    alert("Sorry, please try again")
-//    }
-//if  ($captcha.getResponse() != ""){
-//     echo 'validated';
-//} else{
-//    alert("You can't proceed!");
-//    $err++;
-//}
+   if(isset($_POST['g-recaptcha-response'])&& $_POST['g-recaptcha-response']){
+        var_dump($_POST);
+        $secret = "6LdklhITAAAAAAKwyEoz5fdbXx1ndfrfcABwDh0c";
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $captcha = $_POST['g-recaptcha-response'];
+        $rsp  = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha&remoteip$ip");
+        var_dump($rsp);
+        $arr = json_decode($rsp,TRUE);
+        if($arr['success']){
+            alert ('Done');
+            echoe 'Successful'
+        }else{
+            echo 'Spam';
+            alert ('Error');
+        }
+        
+    }
 
 if($err >1){
 	 header('Location: contact.php?failed=true');
