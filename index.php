@@ -153,7 +153,7 @@
                         <li>
                             <a href="http://www.plus.google.com" target="_blank"><img  src="images/gplus.png" id="gplus" alt="Nav Design mail"></a>
                         </li>
-                        <p class="txt-railway">Copyright  &copy; 2015 NAV Design</p>   
+                        <p class="txt-railway">Copyright  &copy; 2016 NAV Design</p>   
                     </ul>
                     
                 </div>

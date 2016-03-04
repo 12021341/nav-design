@@ -129,13 +129,11 @@
                         <textarea rows="4" cols="45" name="comment" ></textarea>
                         
                 </div>
-                <div class="recaptcha-wrap">   
+               <!-- <div class="recaptcha-wrap">   
                    <div class="g-recaptcha" data-sitekey="6LdklhITAAAAADGr43pdhvOXPQ6UY4IXZgu2uONJ" style="transform:scale(0.7);transform-origin:0;-webkit-transform:scale(0.7);
 transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;"></div>
-                   </div>
+                   </div>-->
 
-                <!-- Huwag ka mag inline ng mga ganto my friend lagay mo css files mo. -->
-                <!--  Iwasan mo gumamit ng table lagi . masama ang gumamit ng table promise pag sa mga data table lang tska mo gamitin-->
                 <style>
                     @media screen and (max-height: 575px){
                     #rc-imageselect, .g-recaptcha {transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;}

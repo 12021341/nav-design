@@ -397,6 +397,7 @@
 	position: relative;
 	padding-right: -50%;
     padding-left: -50%;
+/*
     -webkit-animation-name: commercialPicture;
     -webkit-animation-duration: 5s;
     -webkit-animation-timing-function: linear;
@@ -410,6 +411,7 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+*/
 }
 #sixthPicture{
     float:left;
@@ -426,19 +428,21 @@
 	position: relative;
 	padding-right: -50%;
     padding-left: -50%;
+/*
     -webkit-animation-name: towerPicture;
     -webkit-animation-duration: 9s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: 2s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    /* Standard syntax */
+     Standard syntax 
     animation-name: towerPicture;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+*/
 }
 #seventhPicture{
     float:right;
@@ -453,6 +457,7 @@
 	position: relative;
 	padding-right: 50%;
     padding-left: 50%;
+/*
     -webkit-animation-name: interior;
     -webkit-animation-duration: 5s;
     -webkit-animation-timing-function: linear;
@@ -466,13 +471,14 @@
     -moz-animation-delay: 2s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-direction: alternate;
-    /* Standard syntax */
+     Standard syntax 
     animation-name: interior;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+*/
 }
 
 #eighthPicture{
@@ -489,6 +495,7 @@
 	position: relative;
 	padding-right: -50%;
     padding-left: -50%;
+/*
     -webkit-animation-name: Other;
     -webkit-animation-duration: 5s;
     -webkit-animation-timing-function: linear;
@@ -509,22 +516,22 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+*/
 }
 
 
 /* Chrome, Safari, Opera */
+/*
 @-webkit-keyframes commercialPicture {
     from {right: 0px;}
     to {right: 320px;}
 }
 
-/* Standard syntax */
 @keyframes commercialPicture {
        from {right: 0px;}
     to {right: 320px;}
 }
 
-/* Standard syntax */
 @keyframes industrialPicture {
    from {top: -200px; }
     to {top:  10px;}
@@ -540,13 +547,11 @@
     to {left: -390px;}
 }
 
-/* Standard syntax */
 @keyframes lowrise {
  from {left: 0px;}
     to {left: -390px;}
 }
 
-/* Standard syntax */
 @keyframes towerPicture {
     from {top: 0px;}
     to {top: -130px;}
@@ -560,7 +565,6 @@
     to {top: -130px;}
 }
 
-/* Standard syntax */
 @keyframes Other {
     from {top: 0px;}
     to {top: -130px;}
@@ -574,14 +578,11 @@
     to {top: -130px;}
 }
 
-/* Standard syntax */
-*/
 @-webkit-keyframes masterplan {
     from {top: 0px;}
     to {top: -130px;}
 }
 
-/* Standard syntax */
 @keyframes masterplan {
     from {top: 0px;}
     to {top: -130px;}
@@ -595,7 +596,7 @@
  from {right: -200px;}
     to {right: 0px;}
 }
-/* Standard syntax */
+ Standard syntax 
 @keyframes interior {
  from {right: -200px;}
     to {right: 0px;}
@@ -606,11 +607,11 @@
     to {top: 130px;}
 }
 
-/* Standard syntax */
 @keyframes other {
     from {top: 0px;}
     to {top: 130px;}
 }
+*/
 
 
 
@@ -644,12 +645,10 @@
 		z-index: -1;
 		content: '';
 		position: absolute;
-
 }
 
 svg {
     background:url('../img/Thumbnails/02_mixeduse.jpg');
-
 }
 
 svg image {
