@@ -397,7 +397,7 @@
 	position: relative;
 	padding-right: -50%;
     padding-left: -50%;
-/*
+
     -webkit-animation-name: commercialPicture;
     -webkit-animation-duration: 5s;
     -webkit-animation-timing-function: linear;
@@ -411,7 +411,7 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-*/
+
 }
 #sixthPicture{
     float:left;
@@ -428,7 +428,7 @@
 	position: relative;
 	padding-right: -50%;
     padding-left: -50%;
-/*
+
     -webkit-animation-name: towerPicture;
     -webkit-animation-duration: 9s;
     -webkit-animation-timing-function: linear;
@@ -442,7 +442,7 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-*/
+
 }
 #seventhPicture{
     float:right;
@@ -457,7 +457,7 @@
 	position: relative;
 	padding-right: 50%;
     padding-left: 50%;
-/*
+
     -webkit-animation-name: interior;
     -webkit-animation-duration: 5s;
     -webkit-animation-timing-function: linear;
@@ -478,7 +478,7 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-*/
+
 }
 
 #eighthPicture{
@@ -495,7 +495,7 @@
 	position: relative;
 	padding-right: -50%;
     padding-left: -50%;
-/*
+
     -webkit-animation-name: Other;
     -webkit-animation-duration: 5s;
     -webkit-animation-timing-function: linear;
@@ -516,12 +516,12 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-*/
+
 }
 
 
 /* Chrome, Safari, Opera */
-/*
+
 @-webkit-keyframes commercialPicture {
     from {right: 0px;}
     to {right: 320px;}
@@ -611,7 +611,7 @@
     from {top: 0px;}
     to {top: 130px;}
 }
-*/
+
 
 
 

@@ -11,8 +11,10 @@
      text-align: justify;
      overflow: hidden;
      color: #ffffff;
-     letter-spacing: 1px; 
+     letter-spacing: 1px;
+    margin-bottom: 0px;
 }
+
 #icons {
     padding:0 0 0 0em;
 /*    list-style: none; */
@@ -133,6 +135,7 @@ td input{
     width: 100%;
     column-width: 10px;
     font-color: red;
+    margin-bottom: 10px;
 }
 #navD{
     font-family: 'Century Gothic','CenturyGothic','AppleGothic',sans-serif;

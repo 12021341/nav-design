@@ -79,12 +79,35 @@
                     <div id="navD">
                             Nav Design
                     </div>
-                    <p id="whitecontact">Unit 7, 2nd Floor, JRS Building, Brgy. H. C. Conception, Maharlika Highway, 3100 CABANATUAN CITY PHILIPPINES</p>
+                    <p id="whitecontact">28/F CityLand Pasong Tamo Tower, Unit 2807, 2210 Chino Roces Avenue, 1230 Makati City, Metro Manila, Philippines</p>
+                        <table class="contentTable"> 
+                        <tr>
+                         <td><label class="labelContact">Tel/Fax (L)</label></td>
+                         <td><h7>+63 2 8938909 ext.802</h7></td>
+                         </tr>
+                        </table>
                     
+                    <p id="whitecontact">2/F JRS Building, Unit 7, H.C. Concepcion, Maharlika Highway, 3100 Cabanatuan City, Philippines</p>
+                        <table class="contentTable"> 
+                        <tr>
+                         <td><label class="labelContact">Tel/Fax (L)</label></td>
+                         <td><h7>+63 44 9601300</h7></td>
+                         </tr>
+                        </table>
+                    
+                    <p id="whitecontact">Blk. 39, Tanglin Halt Road, Unit #01-119V, Singapore 143039</p>
+                        <table class="contentTable"> 
+                        <tr>
+                         <td><label class="labelContact">Telephone (I)</label></td>
+                         <td><h7>+65 86600443</h7></td>
+                         </tr>
+                        </table>
+                    
+<!--
             <table class="contentTable">
                   <tr>
-                    <td><label class="labelContact">Telephone (L)</label></td>
-                    <td><h7>+63 905 336 1576 (PH)</h7></td>
+                    <td><label class="labelContact">Tel/Fax (L)</label></td>
+                    <td><h7>+63 2 8938909 ext.802</h7></td>
                   </tr>
                   <tr>
                     <td><label class="labelContact">Telephone (I)</label></td>
@@ -99,6 +122,8 @@
                     <td><h7>www.nav-design.com</h7></td>
                   </tr>
             </table>
+-->
+                    
             <p></p>  
             <b class="heading">Enquiry</b>
             <p></p>
