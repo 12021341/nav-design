@@ -168,7 +168,7 @@
                     
                 <div class="message">
                     <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
-                        <textarea rows="7" cols="31" name="comment" wrap="hard"></textarea>
+                        <textarea rows="7" cols="35" name="comment" wrap="hard"></textarea>
                 </div>
                <!-- <div class="recaptcha-wrap">   
                    <div class="g-recaptcha" data-sitekey="6LdklhITAAAAADGr43pdhvOXPQ6UY4IXZgu2uONJ" style="transform:scale(0.7);transform-origin:0;-webkit-transform:scale(0.7);

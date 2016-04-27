@@ -142,11 +142,12 @@ td input{
     margin-bottom: 10px;
 }
 #navD{
+    color:#FF6600;
+    font-color:#FF6600; !important;
     font-family: 'Century Gothic','CenturyGothic','AppleGothic',sans-serif;
     text-align: left;
     font-weight: bold;
     font-size:0.8em;
-    color:#FF6600;
     margin-top: 10%;
 }
 
