@@ -77,31 +77,46 @@
                     <b class="heading">Address</b>
                 <div class="innercontact"><p></p>
                     <div id="navD">
-                            Nav Design
+                            NavD+C - Metro Manila
                     </div>
-                    <p id="whitecontact">28/F CityLand Pasong Tamo Tower, Unit 2807, 2210 Chino Roces Avenue, 1230 Makati City, Metro Manila, Philippines</p>
-                        <table class="contentTable"> 
+                    <div id="whitecontact">28/F CityLand Pasong Tamo Tower, Unit 2807, 2210 Chino Roces Avenue, 1230 Makati City, Metro Manila, Philippines 
+                    <p>Tel/Fax: +63 2 8938909 ext.802</p>
+                    </div>
+                        <!--<table class="contentTable"> 
                         <tr>
-                         <td><label class="labelContact">Tel/Fax (L)</label></td>
-                         <td><h7>+63 2 8938909 ext.802</h7></td>
+                          <td><label class="labelContact">Tel/Fax (L)</label></td>
+                         <td><h7>Tel/Fax: +63 2 8938909 ext.802</h7></td>
                          </tr>
                         </table>
+                            -->
+                    <div id="navD">
+                            NavD+C - Cabanatuan
+                    </div>
+                    <div id="whitecontact">2/F JRS Building, Unit 7, H.C. Concepcion, Maharlika Highway, 3100 Cabanatuan City, Philippines
+                    <p>Tel/Fax: +63 44 9601300</p>
+                    </div>
                     
-                    <p id="whitecontact">2/F JRS Building, Unit 7, H.C. Concepcion, Maharlika Highway, 3100 Cabanatuan City, Philippines</p>
-                        <table class="contentTable"> 
+                        
+                    <!-- table class="contentTable"> 
                         <tr>
                          <td><label class="labelContact">Tel/Fax (L)</label></td>
                          <td><h7>+63 44 9601300</h7></td>
                          </tr>
-                        </table>
+                        </table> -->
                     
-                    <p id="whitecontact">Blk. 39, Tanglin Halt Road, Unit #01-119V, Singapore 143039</p>
-                        <table class="contentTable"> 
+                    <div id="navD">
+                            NavD+C - Singapore
+                    </div>
+                    <div id="whitecontact">Blk. 39, Tanglin Halt Road, Unit #01-119V, Singapore 143039
+                    <p>Telephone: +65 86600443</p>
+                    </div>
+                        <!-- <table class="contentTable"> 
                         <tr>
                          <td><label class="labelContact">Telephone (I)</label></td>
                          <td><h7>+65 86600443</h7></td>
                          </tr>
                         </table>
+                    -->
                     
 <!--
             <table class="contentTable">
@@ -122,9 +137,11 @@
                     <td><h7>www.nav-design.com</h7></td>
                   </tr>
             </table>
--->
+-->      
+            <b class="heading">Email</b>
+            <p id ="subheading">info@navdesign.com
+            </p>
                     
-            <p></p>  
             <b class="heading">Enquiry</b>
             <p></p>
             <form action="mailer.php" method="POST">
@@ -151,8 +168,7 @@
                     
                 <div class="message">
                     <p class="fonto" style='text-align:left'>Message:<label class="control-label"></label></p>
-                        <textarea rows="4" cols="45" name="comment" ></textarea>
-                        
+                        <textarea rows="7" cols="31" name="comment" wrap="hard"></textarea>
                 </div>
                <!-- <div class="recaptcha-wrap">   
                    <div class="g-recaptcha" data-sitekey="6LdklhITAAAAADGr43pdhvOXPQ6UY4IXZgu2uONJ" style="transform:scale(0.7);transform-origin:0;-webkit-transform:scale(0.7);

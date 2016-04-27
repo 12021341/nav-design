@@ -4,7 +4,12 @@
 .heading{
     color:#FF6600;
     font-size: 12.3px;
-    font-style: bold;
+    font-style: bold;  
+}
+#subheading{
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 15%;
 }
 #whitecontact{
      font-size: 0.7em;
@@ -12,7 +17,7 @@
      overflow: hidden;
      color: #ffffff;
      letter-spacing: 1px;
-    margin-bottom: 0px;
+     margin-bottom: 4%;
 }
 
 #icons {
@@ -119,12 +124,11 @@ td input{
     font-size: 0.7em;
 }
 .labelContact{
-    color:#FF6600;
     float: left;
-	text-align: right;
+	text-align: center;
 	width: 100px;
     padding-top: 3px;
-    font-size: 11px;
+    font-size: 0.8em;
 /*    padding-left: 10px;*/
 }
 .contentTable{
@@ -142,6 +146,8 @@ td input{
     text-align: left;
     font-weight: bold;
     font-size:0.8em;
+    color:#FF6600;
+    margin-top: 10%;
 }
 
 .centered{
@@ -471,8 +477,8 @@ margin:0 auto;
 .middlewrapper{
 	display: inline-block;
     background-color: #1c1c1c;
-	width: 17.5%;
-	max-width: 90%;
+	width: 14%;
+	max-width: 95%;
 	min-height: 80%;
 	height: 580px;
 	min-height: 100%;
