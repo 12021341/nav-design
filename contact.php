@@ -29,6 +29,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+     <link rel="icon" type="image/png" href="/images/logos.png" /> 
 
 </head>
 
@@ -77,9 +78,9 @@
                     <b class="heading">Address</b>
                 <div class="innercontact"><p></p>
                     <div id="navD">
-                            NavD+C - Metro Manila
+                            NAVD+C - Metro Manila
                     </div>
-                    <div id="whitecontact">28/F CityLand Pasong Tamo Tower, Unit 2807, 2210 Chino Roces Avenue, 1230 Makati City, Metro Manila, Philippines 
+                    <div id="whitecontact">Makati Corporate Office: 28/F CityLand Pasong Tamo Tower, Unit 2807, 2210 Chino Roces Avenue, 1230 Makati City, Metro Manila, Philippines 
                     <p>Tel/Fax: +63 2 8938909 ext.802</p>
                     </div>
                         <!--<table class="contentTable"> 
@@ -90,7 +91,7 @@
                         </table>
                             -->
                     <div id="navD">
-                            NavD+C - Cabanatuan
+                            NAVD+C - Cabanatuan
                     </div>
                     <div id="whitecontact">2/F JRS Building, Unit 7, H.C. Concepcion, Maharlika Highway, 3100 Cabanatuan City, Philippines
                     <p>Tel/Fax: +63 44 9601300</p>
@@ -105,7 +106,7 @@
                         </table> -->
                     
                     <div id="navD">
-                            NavD+C - Singapore
+                            NAVD+C - Singapore
                     </div>
                     <div id="whitecontact">Blk. 39, Tanglin Halt Road, Unit #01-119V, Singapore 143039
                     <p>Telephone: +65 86600443</p>

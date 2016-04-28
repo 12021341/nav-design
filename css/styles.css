@@ -478,7 +478,7 @@ margin:0 auto;
 .middlewrapper{
 	display: inline-block;
     background-color: #1c1c1c;
-	width: 14%;
+	width: 13.7%;
 	max-width: 95%;
 	min-height: 80%;
 	height: 580px;
@@ -492,7 +492,7 @@ margin:0 auto;
 .leftwrapper{
     float: left;
     background-color: #1c1c1c;
-    width: 41%;
+    width: 42%;
     height: 100%;
 /*    display: none;*/
     visibility: hidden;
@@ -500,7 +500,7 @@ margin:0 auto;
 }
 .rightwrapper{
     float: right;
-    width: 41%;
+    width: 43%;
     background-color: #1c1c1c;
     height: 100%;
    visibility: hidden;
