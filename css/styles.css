@@ -1,5 +1,15 @@
+textarea {
+width:100%;
+height:145px;
+border:1px solid black;
+padding:2px 4px;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
 .fonto{
    color:#FF6600;
+    
 } 
 .heading{
     color:#FF6600;
